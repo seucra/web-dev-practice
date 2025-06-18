@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this survey to help us improve our services.</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <legend>Enter Details</legend>
+                <label id="name-label" for="name">Enter Your Name: 
+                    <input id="name" name="name" type="text" placeholder="Name" required />
+                </label>
+                <label id="email-label" for="email">Enter Your Email: 
+                    <input id="email" type="email" placeholder="Em@i.l" required />
+                </label>
+                <label id="number-label" for="number">Enter Number: 
+                    <input id="number" name="number" type="number" min="0" max="999" placeholder="123" required />
+                </label>
+                <label for="password">Enter Password: 
+                    <input id="password" type="password" name="password" placeholder="type a password" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dropdown option selector</legend>
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">option1</option>
+                    <option value="2">option2</option>
+                    <option value="3">other</option>
+                </select>
+                <label for="text-area"> Text area provided
+                    <textarea id="text-area" name="text-area" rows="1" cols="30" placeholder="Type some text..."></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>radio-button buttons</legend>
+                <label for="radio1">
+                    <input id="radio1" type="radio" name="radio-button" value="1" checked /> option1
+                </label>
+                <label for="radio2">
+                    <input id="radio2" type="radio" name="radio-button" value="2" /> option2
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend for="checkbox-buttons">Checkbox-buttons Buttons</legend>
+                <label for="checkbox1">
+                    <input id="checkbox1" name="checkbox1" type="checkbox" value="1" /> Checkbox1
+                </label>
+                <label for="checkbox2">
+                    <input id="checkbox2" name="checkbox2" type="checkbox" value="2"/> Checkbox2
+                </label>
+                <label for="checkbox3">
+                    <input id="checkbox3" name="checkbox3" type="checkbox" value="3"/> Checkbox3
+                </label>
+            </fieldset>
+
+            <label for="terms">
+                <input id="terms" type="checkbox" value="true" required /> I accept the <a href="some-link" target="_blank">terms and conditions</a>
+            </label>
+
+            <input id="submit" type="submit" value="submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Apache junk (optional)
+*.pid
+*.sock
+
+# Node/venv stuff (if used later)
+node_modules/
+venv/
