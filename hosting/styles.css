@@ -2,8 +2,13 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #1b1b32;
-    color: #f5f6f7;
+    background-image: url('https://seucra.github.io/miscellaneous/images/sample_1d96b164fded6a69c7e5bee203e8e2ed38a1e3a8.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top; /* or center center */
+    background-attachment: fixed;   /* default: scrolls with page */ /* or use scroll */
+    min-height: 100vh;
+    color: #00bbbb;
     font-family: Tahoma;
     font-size: 16px;
 }
@@ -20,4 +25,3 @@ form {
     margin: 0 auto;
     padding-bottom: 2em;
 }
-
