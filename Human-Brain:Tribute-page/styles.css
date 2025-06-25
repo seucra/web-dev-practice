@@ -1,0 +1,79 @@
+@media (prefers-reduced-motion: no-preference)? {
+	* {
+		scroll-behaviour: smooth;
+	}
+}
+
+body {
+	font-family: Helvetica;
+	margin: 0;
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('https://img4.gelbooru.com//samples/25/4b/sample_254b8fbc986f41c3312766df6cffe716.jpg');	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: 0;
+}
+
+#logo {
+	width: max(3vw, 3rem);
+	background-color: #0a0a45;
+	padding: 3.7px;
+}
+
+h1 {
+	color: #4B632a;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	margin-left: 25%;
+	font-size: 3rem;
+}
+
+nav {
+	height: 50px;
+	width: max(30vw, 200px);
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-inline-start: 0;
+	margin-block: 0;
+	height: 100%;
+}
+
+nav > ul > li {
+	color: #641245;
+	margin: 0 0.8;
+	padding: 0.4rem;
+	display: block;
+}
+
+nav > ul > li: hover {
+	color: #1122dd;
+	text-shadow: 2px 2px 0px #fff
+}
+
+li > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	padding-top: 40px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1, h2 {
+	font-family: Verdana, Tahoma;
+}
