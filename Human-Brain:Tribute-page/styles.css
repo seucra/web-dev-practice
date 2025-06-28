@@ -29,11 +29,17 @@ header {
 }
 
 h1 {
-	color: #4B632a;
+	color: #aa00ff;
+}
+
+h1 > span {
+	background: linear-gradient(to right, maroon, #d212d5);
+	background-clip: text;
+	color: transparent;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 	text-align: center;
-	margin-left: 25%;
-	font-size: 3rem;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 nav {
@@ -52,7 +58,7 @@ nav > ul {
 }
 
 nav > ul > li {
-	color: #641245;
+	color: #ee3366;
 	margin: 0 0.8;
 	padding: 0.4rem;
 	display: block;
@@ -69,11 +75,38 @@ li > a {
 }
 
 main {
-	padding-top: 40px;
+	padding: 40px;
+	margin: 0;
+	background-image: url('https://img4.gelbooru.com/images/e4/4e/e44ed39594aefcc80b723a6fff7ba36e.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	min-height: 100vh;
+	height: 100%;
+	color: cyan;
+}
+
+.topic{
 	width: 80%;
-	margin: 0 auto;
+	margin: 50px auto;
+	max-width: 1200px;
 }
 
 h1, h2 {
 	font-family: Verdana, Tahoma;
+}
+
+h3 {
+	font-family: Palatino;
+}
+
+footer{
+	margin: 0;
+	text-align: center;
+	background-image: url('https://img4.gelbooru.com/images/17/a5/17a520c065adc4924505de90163f0769.jpg');	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	top: 0;
 }
