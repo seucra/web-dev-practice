@@ -1,112 +1,160 @@
-@media (prefers-reduced-motion: no-preference)? {
-	* {
-		scroll-behaviour: smooth;
-	}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+	background-color: rgba(200,100,150,0.5);
+	color: maroon;
 }
 
 body {
-	font-family: Helvetica;
-	margin: 0;
+	height: 100%;
+	font-family: tahoma, sans-serif;
+	line-height: 1.6;
+	background-image: url('https://img4.gelbooru.com/images/04/80/0480cc6868e05c4556d8a275886e9db9.jpg');
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #333;
+	color: #333;
 }
 
 header {
-	height: 80px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-image: url('https://img4.gelbooru.com//samples/25/4b/sample_254b8fbc986f41c3312766df6cffe716.jpg');	
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	top: 0;
-}
-
-#logo {
-	width: max(3vw, 3rem);
-	background-color: #0a0a45;
-	padding: 3.7px;
-}
-
-h1 {
-	color: #aa00ff;
-}
-
-h1 > span {
-	background: linear-gradient(to right, maroon, #d212d5);
-	background-clip: text;
-	color: transparent;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-	text-align: center;
-	font-weight: bold;
-	font-size: 2em;
+	background-color: rgba(78,62,200,0.5);
+	color: white;
 }
 
 nav {
-	height: 50px;
-	width: max(30vw, 200px);
-}
-
-nav > ul {
 	display: flex;
-	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-inline-start: 0;
-	margin-block: 0;
-	height: 100%;
+	justify-content: space-between;
+	padding: 20px;
 }
 
-nav > ul > li {
-	color: #ee3366;
-	margin: 0 0.8;
-	padding: 0.4rem;
-	display: block;
+nav h1 {
+	font-size: 24px;
 }
 
-nav > ul > li: hover {
-	color: #1122dd;
-	text-shadow: 2px 2px 0px #fff
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 15px;
 }
 
-li > a {
-	color: inherit;
+.nav-links li a {
+	color: white;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-main {
-	padding: 40px;
-	margin: 0;
-	background-image: url('https://img4.gelbooru.com/images/e4/4e/e44ed39594aefcc80b723a6fff7ba36e.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	min-height: 100vh;
-	height: 100%;
+.nav-links li a:hover {
+	color: rgba(200,200,200,0.9);
+	text-decoration: underline;
+}
+
+.hero {
+	text-align: center;
+	background-color: rgba(150,54,123,0.5);
+	padding: 20px 7px;
+}
+
+.hero h2 {
+	font-size: 2.5em;
+	margin-bottom: 5px;
 	color: cyan;
 }
 
-.topic{
-	width: 80%;
-	margin: 50px auto;
-	max-width: 1200px;
+.hero p {
+	font-size: 1.25em;
+	color: pink;
 }
 
-h1, h2 {
-	font-family: Verdana, Tahoma;
+main {
+	max-width: 80%;
+	margin: auto;
+	padding: 20px;
+	background-color: rgba(150,150,200,0.4);
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+	text-align: justify;
 }
 
-h3 {
-	font-family: Palatino;
+main section {
+	border-bottom: 5px dotted maroon;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-footer{
-	margin: 0;
+main section:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+main section h2 {
+	text-decoration: underline;
+}
+
+#intro h2 {
+	margin: 0 0 0 2.1em;
+}
+
+#intro .content {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+#intro .content img {
+	width: auto;
+	height: 50vh;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+#intro .content .right-side {
+	flex: 1;
+}
+
+#intro .content blockquote {
+	padding-top: 2.5em;
+}
+
+#struct p {
+	padding: 0 2em;
+}
+
+#facts ul {
+	padding: 0 2em;
+	list-style: square inside;
+}
+
+blockquote {
+	font-family: 'Times new Roman', sans-serif;
+	font-weight: bold;
+	padding: 0 2.5em;
+}
+
+footer {
 	text-align: center;
-	background-image: url('https://img4.gelbooru.com/images/17/a5/17a520c065adc4924505de90163f0769.jpg');	
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center top;
-	top: 0;
+	padding: 10px;
+	background-color: rgba(60,150,123, 0.5);
+	color: #bbbbbbb;
+	border-radius: 12px;
+}
+
+footer h3 {
+	font-size: 1.2em;
+	color: #eeee00;
+}
+
+footer p {
+	text-decoration: underline;
+}
+
+footer p a {
+	color: inherit;
+	font-weight: bold;
 }
