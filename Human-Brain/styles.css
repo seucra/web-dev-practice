@@ -1,6 +1,19 @@
+@media (max-width: 768px) {
+    #intro .content {
+        flex-direction: column;
+    }
+
+    #intro .content img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *::selection {
@@ -19,6 +32,7 @@ body {
 	background-attachment: fixed;
 	background-color: #333;
 	color: #333;
+	padding-top: 80px;
 }
 
 header {
@@ -32,10 +46,18 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px;
+/* for navigation bar to be fixed at top */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(78,62,200,0.5);
+	backdrop-filter: blur(6px);
+	z-index: 1000;
 }
 
 nav h1 {
-	font-size: 24px;
+	font-size: 1.6em;
 }
 
 .nav-links {
@@ -48,6 +70,7 @@ nav h1 {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-links li a:hover {
@@ -108,8 +131,8 @@ main section h2 {
 }
 
 #intro .content img {
-	width: auto;
-	height: 50vh;
+	height: auto;
+	max-width: 40vh;
 	border-radius: 10px;
 	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
@@ -132,7 +155,7 @@ main section h2 {
 }
 
 blockquote {
-	font-family: 'Times new Roman', sans-serif;
+	font-family: 'Times New Roman', Times, sans-serif;
 	font-weight: bold;
 	padding: 0 2.5em;
 }
@@ -141,7 +164,7 @@ footer {
 	text-align: center;
 	padding: 10px;
 	background-color: rgba(60,150,123, 0.5);
-	color: #bbbbbbb;
+	color: #333;
 	border-radius: 12px;
 }
 
