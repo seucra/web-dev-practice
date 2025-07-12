@@ -68,8 +68,8 @@ nav h1 {
 
 .nav-links li a {
 	color: white;
-	text-decoration: none;
 	font-weight: bold;
+	text-decoration: none;
 	transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
