@@ -96,13 +96,14 @@ nav h1 {
 }
 
 main {
-	max-width: 80%;
+	max-width: 90%;
 	margin: auto;
 	padding: 20px;
 	background-color: rgba(150,150,200,0.4);
 	border-radius: 12px;
 	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 	text-align: justify;
+	color: #112233;
 }
 
 main section {
