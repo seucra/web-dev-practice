@@ -1,27 +1,34 @@
-body {
-    width: 100%;
-    height: 100vh;
+html {
     margin: 0;
+    padding: 0;
     background-image: url('https://drunkpink.github.io/miscellaneous/images/pixel-art-gif-weapon-sword-flower-butterfly-water-floatingland.gif');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top; /* or center center */
     background-attachment: fixed;   /* default: scrolls with page */ /* or use scroll */
-    min-height: 100vh;
-    color: #00bbbb;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border: 
     font-family: Tahoma;
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 h1,
 p {
+    color: #00bbbb;
     text-align: center;
 }
 
 form {
+    background-color: rgba(255,0,200,0.5);
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+    color: #00bbbb;
     padding-bottom: 2em;
 }
