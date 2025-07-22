@@ -1,8 +1,14 @@
 # 🌐 Web Dev Practice — SEUCRA
 
-Welcome to my **web development practice repository** — a hands-on collection of mini-projects built with HTML and CSS (and some JS). This repo is my sandbox for exploring layout techniques, CSS tricks, forms, responsive design, accessibility, and more.
+Welcome to my **web development practice repository** — a hands-on collection of mini-projects built with HTML, CSS, and some JavaScript. This repo is my sandbox for exploring:
 
-These projects were created as part of my learning journey and serve as a foundation for future, more complex front-end development.
+- Semantic HTML
+- CSS layouts (Flexbox, Grid, Box Model)
+- Forms and accessibility
+- Responsive design
+- CSS art and animations
+
+These projects are built as part of my learning journey and lay the groundwork for more complex front-end projects in the future.
 
 ---
 
@@ -12,24 +18,55 @@ These projects were created as part of my learning journey and serve as a founda
 |----------------|-------------|
 | **Balance-Sheet-Pseudo-Selectors** | Styled balance sheet using CSS pseudo-selectors |
 | **Cafe-Menu** | A simple cafe-style menu layout |
-| **Cat-Painting-Intermediate-CSS** | CSS artwork practice using intermediate-level selectors and layout |
-| **CatPhotoApp** | Basic HTML image app – early project |
-| **Color-Markers** | Project demonstrating nested divs and background colors |
-| **Human-Brain** | Semantic HTML layout of a human brain information page |
-| **Mahatma-Gandhi-Tribute** | A tribute page with images and styles (includes alt versions) |
-| **Nutrition-Label-Typography** | A replica of a food label using typography and layout CSS |
-| **Photo-Gallery-Flexbox** | Responsive photo grid using CSS Flexbox |
-| **Piano-Responsive-Web-Design** | A piano layout using HTML & responsive CSS |
-| **Portfolio** | A simple portfolio landing page with assets and layout |
-| **Quiz-Accessibility** | A short quiz form with accessible labels and input elements |
-| **Registration-Form** | A classic form using form elements and styles |
-| **Rothko-Painting-css-box-model** | A CSS art project exploring the box model |
-| **SurveyForm** | A styled survey form using semantic HTML & CSS |
+| **Cat-Painting-Intermediate-CSS** | CSS artwork using intermediate selectors and layout |
+| **CatPhotoApp** | Basic HTML image app – an early beginner project |
+| **CitySkylines-Variables** | A skyline scene using CSS variables |
+| **Color-Markers** | Project demonstrating nested divs and background color layers |
+| **FerrisWheel-Animation** | A CSS-only animated Ferris wheel |
+| **Human-Brain** | Semantic HTML layout of human brain anatomy |
+| **Mahatma-Gandhi-Tribute** | A tribute page with semantic structure and styling |
+| **Magazine-Grid** | A magazine-style layout using CSS Grid |
+| **Nutrition-Label-Typography** | Replica of a food label using advanced typography and layout |
+| **Photo-Gallery-Flexbox** | Responsive photo grid layout with Flexbox |
+| **Piano-Responsive-Web-Design** | A piano layout styled for responsiveness |
+| **Portfolio** | A simple personal portfolio page |
+| **Quiz-Accessibility** | Accessible form-based quiz with proper input labeling |
+| **Registration-Form** | A styled form with various input types |
+| **Rothko-Painting-css-box-model** | CSS art inspired by Rothko using box model techniques |
+| **SurveyForm** | A styled, accessible survey form using semantic HTML |
+
+---
+
+## 📄 Miscellaneous Files
+
+- **index.html** – Homepage to navigate all projects (used on GitHub Pages)
+- **index.nginx-debian.html** – Default Nginx page (can be ignored or removed)
+- **.gitignore** – Standard Git ignore settings
+- **README.md** – This file
 
 ---
 
 ## 🚀 Live Demo
 
-[🔗 Check out the hosted version](https://seucra.github.io/web-dev-practice/)
+[🔗 View on GitHub Pages](https://seucra.github.io/web-dev-practice/)
+
+> Tip: Use the homepage (`index.html`) to explore projects easily!
 
 ---
+
+## 🛠️ Tech Stack
+
+- **HTML5**  
+- **CSS3** (Flexbox, Grid, Box Model, Animations)  
+- **Basic JavaScript** *(in some projects)*  
+- **Responsive Design Principles**
+
+---
+
+## 📌 License
+
+Feel free to explore, clone, and learn. All projects are intended for personal and educational use.
+
+---
+
+&copy; 2025 SEUCRA — Built with passion and a lot of practice.
