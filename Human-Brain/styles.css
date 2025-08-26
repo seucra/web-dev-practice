@@ -1,12 +1,50 @@
 @media (max-width: 768px) {
-    #intro .content {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    #intro .content img {
-        height: auto;
-        width: 100%;
-    }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  #intro .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #intro .content img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #intro .content blockquote {
+    padding-top: 1em;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  blockquote {
+    padding: 0 1em;
+  }
+
+  #struct p,
+  #facts ul {
+    padding: 0 1em;
+  }
 }
 
 * {
@@ -23,8 +61,8 @@
 
 body {
 	height: 100%;
-	font-family: tahoma, sans-serif;
-	line-height: 1.6;
+	font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
 	background-image: url('https://drunkpink.github.io/miscellaneous/images/scenery-open-sky-field-clouds.jpg');
 	background-position: center top;
 	background-size: cover;
@@ -57,10 +95,13 @@ nav {
 }
 
 nav h1 {
-	font-size: 1.6em;
+	font-size: 1.8em;
+    letter-spacing: 1px;
 }
 
 .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
 	list-style: none;
 	display: flex;
 	gap: 15px;
@@ -79,9 +120,10 @@ nav h1 {
 }
 
 .hero {
-	text-align: center;
-	background-color: rgba(150,54,123,0.5);
-	padding: 20px 7px;
+	text-align: center;background: linear-gradient(to right, rgba(150,54,123,0.6), rgba(54,123,150,0.6));
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 0 0 12px 12px;
 }
 
 .hero h2 {
@@ -96,7 +138,7 @@ nav h1 {
 }
 
 main {
-	max-width: 90%;
+	max-width: 70ch;
 	margin: auto;
 	padding: 20px;
 	background-color: rgba(150,150,200,0.4);
