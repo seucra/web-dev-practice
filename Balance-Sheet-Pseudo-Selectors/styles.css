@@ -149,3 +149,32 @@ tr.data td {
 tr.data td:last-of-type {
   padding-right: 0.5rem;
 }
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  h1 .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #years {
+    justify-content: space-between;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+  tr.data th .description {
+    margin-right: 0;
+    padding: 0.5rem 0;
+  }
+}
