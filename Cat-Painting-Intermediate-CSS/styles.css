@@ -7,12 +7,12 @@ body {
 }
 
 .cat-head {
-  position: absolute;
+/*  position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: auto;*/
   background: linear-gradient(#5e5e5e 85%, #45454f 100%);
   width: 205px;
   height: 180px;
@@ -204,3 +204,21 @@ body {
   left: 109px;
   transform: rotate(3deg);
 }
+
+/* MOBILE FRIENDLY CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Make cat-head responsive */
+.cat-head {
+  position: relative;
+  width: clamp(180px, 50vw, 205px);
+  height: clamp(160px, 45vw, 180px);
+  margin: 0 auto;
+}
+
