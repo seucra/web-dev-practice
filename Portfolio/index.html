@@ -1,146 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Sample Portfolio</title>
-  </head>
-  <body>
-    <header class="site_header">
-      <div class="wrapper_inner">
-        <nav class="site_header_nav">
-          <ul role="list" class="flex flex_center">
-            <li><a href="#0">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="wrapper">
-          <div class="wrapper_inner">
-            <div class="text_center hero_content">
-              <h1 class="h2">Shams Tabrez Ahmed</h1>
-              <p class="h5">This Work is not mine.</p>
-            </div>
-          </div>
-          <ul role="list" class="flex flex_between hero_social">
-            <address>Port Harcourt, Nigeria</address>
-            <ul role="list" class="flex">
-              <li>Find me online</li>
-              <li>
-                <a href="https://github.com/seucra" target="_blank">
-                  <img src="/assets/icon-github.svg" alt="GitHub" width="24" height="24" />
-                </a>
-              </li>
-<!--
-              <li>
-                <a href="https://x.com/sprucekhalifa" target="_blank">
-                  <img src="/assets/icon-twitter.svg" alt="Twitter" width="24" height="24" />
-                </a>
-              </li>
--->
-            </ul>
-          </ul>
-        </div>
-      </section>
-      <section id="about">
-        <div class="wrapper">
-          <div class="text_center">
-            <h2>
-              I am a web developer and technical writer. I write articles on web development and programming.
-            </h2>
-          </div>
-          <div class="wrapper_inner">
-           <div class="about_content flex flex_around">
-              <figure class="about_figure text_center">
-                <img width="200px" height="200px" src="/assets/user.png" alt="Developer" class="about_img" />
-                <figcaption class="about_caption">Spruce ❤️</figcaption>
-              </figure>
-              <p class="h5">
-                Born in Nigeria, I've spent 4+ years building with and writing about JavaScript. I help companies market their products and services through technical writing.
-              </p>
-            </div>
-          </div>
-        </div>
-       </section>
-<section id="work">
-  <div class="wrapper_inner">
-    <div class="text_center">
-      <h4 class="h5">
-        So far I've helped 20+ companies build their web presence and
-        improve their technical documentation.
-      </h4>
-      <ul role="list" class="work_logos flex flex_center">
-        <li>
-          <img src="/assets/logo1.png" alt="Acme Corp" />
-        </li>
-        <li>
-          <img src="/assets/logo2.png" alt="Acme Innovations" />
-        </li>
-        <li>
-          <img
-            src="/assets/logo1.png"
-            alt="Acme Solutions"
-            width="50"
-            height="50"
-          />
-        </li>
-        <li>
-          <img src="/assets/logo3.png" alt="Acme Technologies" />
-        </li>
-        <li>
-          <img src="/assets/logo1.png" alt="Acme Enterprises" />
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S. Tabrez Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://github.com/favicon.ico" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Seucra</h1>
+      <nav>
+        <ul class="nav_list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#opensource">Open Source</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
-<section id="contact">
-  <div class="wrapper">
-    <div class="text_left">
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <img src="assets/me.jpg" alt="Seucra" class="hero_img" />
+      <h2>Hey, I'm Tabrez</h2>
+      <p>2nd Year BTech | Web Developer | Open Source Enthusiast</p>
+      <p>Currently diving deep into JavaScript and full-stack development.</p>
+      <a href="https://github.com/seucra" target="_blank" class="btn-primary">Check my GitHub</a>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
       <p>
-        Want to work together? <br />
-        I'd love to hear from you.
+        I’m a BTech 2nd-year student from India with hands-on experience in C, Java, Python, and databases like SQLite, MySQL, and PostgreSQL.
+        I build small projects, write code, and actively contribute on GitHub.
       </p>
-    </div>
+      <p>
+        I’m learning JavaScript and React to build full-stack apps and aiming to be an Open Source Lead at GDG.
+      </p>
+    </section>
 
-    <div class="wrapper_inner">
-      <h5 class="h3">Contact Me</h5>
-      <form action="" method="post" class="contact_form">
-        <div class="flex">
-          <div class="form_group">
-            <label for="name">NAME</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="form_group">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
-          </div>
-        </div>
-        <div class="form_group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <button type="submit">SEND MESSAGE</button>
-      </form>
-    </div>
-  </div>
-</section>
-<footer>
-  <section id="footer">
-    <div class="wrapper">
-      <div class="text_right">
-        <p>&copy; 2025 Spruce Emmanuel</p>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project_card">
+        <h3>Classic Snake Game (Godot)</h3>
+        <p>A fun classic apple-eating snake game built on Godot engine.</p>
+        <a href="https://github.com/seucra/snake-game" target="_blank" class="btn-secondary">View on GitHub</a>
       </div>
-    </div>
-  </section>
-</footer>
+      <div class="project_card">
+        <h3>Coming Soon</h3>
+        <p>Working on full-stack Messagin Application. Stay tuned!</p>
+      </div>
+    </section>
+<!--
+    <section id="opensource" class="opensource">
+      <h2>Open Source Contributions</h2>
+      <p>Find my pull requests, issues, and repos I’ve contributed to on GitHub.</p>
+      <a href="https://github.com/seucra?tab=pulls" target="_blank" class="btn-primary">My Pull Requests</a>
+      <a href="https://github.com/seucra?tab=repositories" target="_blank" class="btn-secondary">My Repositories</a>
+    </section>
+-->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xblapllb" method="post" class="contact_form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
 
-    </main>
-  </body>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shams Tabrez Ahmed | Made with ❤️</p>
+    </div>
+  </footer>
+</body>
 </html>
+
