@@ -1,71 +1,99 @@
 # 🌐 Web Dev Practice — SEUCRA
 
-Welcome to my **web development practice repository** — a hands-on collection of mini-projects built with HTML, CSS, and some JavaScript. This repo is my sandbox for exploring:
+A hands-on collection of mini-projects built while learning **HTML**, **CSS**, and responsive web design fundamentals. Organised by topic so it's easy to see what each project covers.
 
-- Semantic HTML
-- CSS layouts (Flexbox, Grid, Box Model)
-- Forms and accessibility
-- Responsive design
-- CSS art and animations
-
-These projects are built as part of my learning journey and lay the groundwork for more complex front-end projects in the future.
+**🔗 [Live Site → seucra.github.io/web-dev-practice](https://seucra.github.io/web-dev-practice/)**
 
 ---
 
-## 📁 Project List
+## 📁 Repository Structure
 
-| Project Folder | Description |
-|----------------|-------------|
-| **Balance-Sheet-Pseudo-Selectors** | Styled balance sheet using CSS pseudo-selectors |
-| **Cafe-Menu** | A simple cafe-style menu layout |
-| **Cat-Painting-Intermediate-CSS** | CSS artwork using intermediate selectors and layout |
-| **CatPhotoApp** | Basic HTML image app – an early beginner project |
-| **CitySkylines-Variables** | A skyline scene using CSS variables |
-| **Color-Markers** | Project demonstrating nested divs and background color layers |
-| **FerrisWheel-Animation** | A CSS-only animated Ferris wheel |
-| **Human-Brain** | Semantic HTML layout of human brain anatomy |
-| **Mahatma-Gandhi-Tribute** | A tribute page with semantic structure and styling |
-| **Magazine-Grid** | A magazine-style layout using CSS Grid |
-| **Nutrition-Label-Typography** | Replica of a food label using advanced typography and layout |
-| **Photo-Gallery-Flexbox** | Responsive photo grid layout with Flexbox |
-| **Piano-Responsive-Web-Design** | A piano layout styled for responsiveness |
-| **Portfolio** | A simple personal portfolio page |
-| **Quiz-Accessibility** | Accessible form-based quiz with proper input labeling |
-| **Registration-Form** | A styled form with various input types |
-| **Rothko-Painting-css-box-model** | CSS art inspired by Rothko using box model techniques |
-| **SurveyForm** | A styled, accessible survey form using semantic HTML |
+```
+web-dev-practice/
+├── index.html                     ← landing page (GitHub Pages home)
+├── README.md
+├── .gitignore
+└── projects/
+    ├── html-fundamentals/         ← semantic HTML structure
+    ├── css-art/                   ← CSS-only artwork & animation
+    ├── layouts/                   ← Flexbox, Grid, responsive design
+    ├── forms-accessibility/       ← forms, ARIA, keyboard navigation
+    └── typography/                ← fonts, spacing, print-style layouts
+```
 
 ---
 
-## 📄 Miscellaneous Files
+## 🗂️ Projects by Category
 
-- **index.html** – Homepage to navigate all projects (used on GitHub Pages)
-- **index.nginx-debian.html** – Default Nginx page (can be ignored or removed)
-- **.gitignore** – Standard Git ignore settings
-- **README.md** – This file
+### 📄 HTML Fundamentals
+*Semantic structure, content organisation, and basic web page anatomy.*
+
+| Project | Description |
+|---------|-------------|
+| [CatPhotoApp](projects/html-fundamentals/CatPhotoApp/) | Very first HTML project — images, links, lists, forms |
+| [Human-Brain](projects/html-fundamentals/Human-Brain/) | Semantic document outline of human brain anatomy |
+| [Mahatma-Gandhi-Tribute](projects/html-fundamentals/Mahatma-Gandhi-Tribute/) | Tribute page with `<figure>`, `<blockquote>`, `<cite>` |
+| [Portfolio](projects/html-fundamentals/Portfolio/) | Simple personal portfolio with `<nav>` and sections |
 
 ---
 
-## 🚀 Live Demo
+### 🎨 CSS Art
+*Visual artwork and animation built entirely with CSS.*
 
-[🔗 View on GitHub Pages](https://seucra.github.io/web-dev-practice/)
+| Project | Description |
+|---------|-------------|
+| [Cat-Painting-Intermediate-CSS](projects/css-art/Cat-Painting-Intermediate-CSS/) | CSS-only cat portrait with shapes and positioning |
+| [CitySkylines-Variables](projects/css-art/CitySkylines-Variables/) | City skyline driven by CSS custom properties |
+| [Color-Markers](projects/css-art/Color-Markers/) | Marker illustrations with layered gradients and shadows |
+| [FerrisWheel-Animation](projects/css-art/FerrisWheel-Animation/) | Fully animated Ferris wheel — zero JavaScript |
+| [Rothko-Painting-css-box-model](projects/css-art/Rothko-Painting-css-box-model/) | Abstract art using the CSS box model and `filter: blur()` |
 
-> Tip: Use the homepage (`index.html`) to explore projects easily!
+---
+
+### 📐 Layouts
+*CSS layout systems — Flexbox, Grid, and responsive design.*
+
+| Project | Description |
+|---------|-------------|
+| [Magazine-Grid](projects/layouts/Magazine-Grid/) | Editorial layout with CSS Grid named areas and spans |
+| [Photo-Gallery-Flexbox](projects/layouts/Photo-Gallery-Flexbox/) | Responsive fluid image gallery with Flexbox |
+| [Piano-Responsive-Web-Design](projects/layouts/Piano-Responsive-Web-Design/) | Responsive piano keyboard with Flexbox and media queries |
+
+---
+
+### 📝 Forms & Accessibility
+*HTML forms, input types, ARIA, and accessible patterns.*
+
+| Project | Description |
+|---------|-------------|
+| [Quiz-Accessibility](projects/forms-accessibility/Quiz-Accessibility/) | Accessible quiz with ARIA roles and proper tab order |
+| [Registration-Form](projects/forms-accessibility/Registration-Form/) | Full registration form with validation attributes |
+| [SurveyForm](projects/forms-accessibility/SurveyForm/) | Styled survey with radio, checkbox, select, and textarea |
+
+---
+
+### ✍️ Typography
+*Font styling, typographic hierarchy, and print-style CSS.*
+
+| Project | Description |
+|---------|-------------|
+| [Balance-Sheet-Pseudo-Selectors](projects/typography/Balance-Sheet-Pseudo-Selectors/) | Styled table using `:nth-of-type` and `::before`/`::after` |
+| [Cafe-Menu](projects/typography/Cafe-Menu/) | Cafe menu with web fonts and typographic rhythm |
+| [Nutrition-Label-Typography](projects/typography/Nutrition-Label-Typography/) | Pixel-perfect FDA nutrition label replica |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5**  
-- **CSS3** (Flexbox, Grid, Box Model, Animations)  
-- **Basic JavaScript** *(in some projects)*  
-- **Responsive Design Principles**
+- **HTML5** — semantic structure
+- **CSS3** — Flexbox, Grid, Box Model, Animations, Custom Properties
+- **Responsive Design** — media queries, fluid layouts
 
 ---
 
 ## 📌 License
 
-Feel free to explore, clone, and learn. All projects are intended for personal and educational use.
+Free to explore, clone, and learn from. All projects are for personal and educational use.
 
 ---
 
