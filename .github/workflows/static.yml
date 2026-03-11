@@ -39,16 +39,23 @@ jobs:
           npm run build
 
       - name: Build port2
-        working-directory: ./projects/port2
+        working-directory: ./projects/portfolios/port2
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build port3
+        working-directory: ./projects/portfolios/port3
         run: |
           npm ci
           npm run build
 
       - name: Prepare deployment
         run: |
-          mkdir -p dist/projects/port1 dist/projects/port2
-          cp -r projects/port1/dist/* dist/projects/port1/ 2>/dev/null || true
-          cp -r projects/port2/dist/* dist/projects/port2/ 2>/dev/null || true
+          mkdir -p dist/projects/portfolios/port1 dist/projects/portfolios/port2 dist/projects/portfolios/port3
+          cp -r projects/portfolios/port2/dist/* dist/projects/portfolios/port2/ 2>/dev/null || true
+          cp -r projects/portfolios/port3/dist/* dist/projects/portfolios/port3/ 2>/dev/null || true
+          cp -r projects/portfolios/port1/* dist/projects/portfolios/port1/ 2>/dev/null || true
           cp index.html dist/
           cp README.md dist/ 2>/dev/null || true
           cp -r projects/*/[!d]* dist/projects/ 2>/dev/null || true

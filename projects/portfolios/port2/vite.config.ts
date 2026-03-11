@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/web-dev-practice/projects/port1/',
+  base: '/web-dev-practice/projects/portfolios/port2/',
   plugins: [react(), tailwindcss()],
 })
