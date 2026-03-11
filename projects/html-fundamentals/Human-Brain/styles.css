@@ -34,6 +34,7 @@
   }
 
   main {
+    width: 95%;
     padding: 15px;
   }
 
@@ -138,7 +139,8 @@ nav h1 {
 }
 
 main {
-	max-width: 70ch;
+	width: 80%;
+	max-width: 1200px;
 	margin: auto;
 	padding: 20px;
 	background-color: rgba(150,150,200,0.4);
