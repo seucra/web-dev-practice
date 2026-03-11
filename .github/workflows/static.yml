@@ -27,17 +27,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js for port1
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
+          cache-dependency-path: ./projects/port1/package-lock.json
 
       - name: Build port1
         working-directory: ./projects/port1
         run: |
           npm ci
           npm run build
+
+      - name: Setup Node.js for port2
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: ./projects/port2/package-lock.json
 
       - name: Build port2
         working-directory: ./projects/port2
