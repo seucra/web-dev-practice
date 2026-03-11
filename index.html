@@ -405,12 +405,12 @@
     <div class="hero-eyebrow">Learning in Public</div>
     <h1>SEUCRA's Web Dev Journey</h1>
     <p class="hero-sub">
-      A hands-on collection of mini-projects built while studying HTML, CSS animations, responsive layouts, accessibility, and more.
+      A collection of learning projects, mini-applications, and complete professional portfolios — exploring HTML, CSS, JavaScript, React, and responsive design.
     </p>
 
     <div class="stats">
-      <span class="stat"><span class="stat-icon">🗂️</span> 18 Projects</span>
-      <span class="stat"><span class="stat-icon">🎨</span> HTML · CSS · JS</span>
+      <span class="stat"><span class="stat-icon">🗂️</span> 21 Projects</span>
+      <span class="stat"><span class="stat-icon">🎨</span> React · TypeScript · HTML · CSS · JS</span>
       <span class="stat"><span class="stat-icon">🚀</span> Live on GitHub Pages</span>
     </div>
   </header>
@@ -418,6 +418,7 @@
   <!-- ── Filter Bar ─────────────────────────────────────────────── -->
   <div class="filter-bar" role="navigation" aria-label="Filter projects by topic">
     <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
     <button class="filter-btn" data-filter="flexbox">Flexbox</button>
     <button class="filter-btn" data-filter="grid">Grid</button>
     <button class="filter-btn" data-filter="animation">Animation</button>
@@ -649,41 +650,47 @@
         <div class="card-arrow">Open project →</div>
       </a>
 
+      <a class="card" href="./projects/port1/" data-tags="portfolio" aria-label="Portfolio 1 - Cyberpunk Terminal Theme">
+        <div>
+          <div class="card-top">
+            <span class="card-icon">🖥️</span>
+            <span class="card-tag" style="color: #00ff88; border-color: rgba(0,255,136,0.35); background: rgba(0,255,136,0.08);">Portfolio</span>
+          </div>
+          <div class="card-title">Portfolio 1</div>
+          <div class="card-desc">Full professional portfolio with cyberpunk-inspired terminal aesthetics, 3D visuals, and interactive animations.</div>
+        </div>
+        <div class="card-arrow">View site →</div>
+      </a>
+
+      <a class="card" href="./projects/port2/" data-tags="portfolio" aria-label="Portfolio 2 - Modern Cyberpunk Design">
+        <div>
+          <div class="card-top">
+            <span class="card-icon">🎨</span>
+            <span class="card-tag" style="color: #a855f7; border-color: rgba(168,85,247,0.35); background: rgba(168,85,247,0.08);">Portfolio</span>
+          </div>
+          <div class="card-title">Portfolio 2</div>
+          <div class="card-desc">Professional portfolio featuring modern cyberpunk design, glitch effects, dynamic animations, and full-stack showcase.</div>
+        </div>
+        <div class="card-arrow">View site →</div>
+      </a>
+
+      <a class="card" href="./projects/" data-tags="portfolio" aria-label="Portfolio 3 - Web Dev Practice Collection">
+        <div>
+          <div class="card-top">
+            <span class="card-icon">📚</span>
+            <span class="card-tag" style="color: #00cfff; border-color: rgba(0,207,255,0.35); background: rgba(0,207,255,0.08);">Portfolio</span>
+          </div>
+          <div class="card-title">Portfolio 3</div>
+          <div class="card-desc">Comprehensive collection of 18+ web dev mini-projects showcasing HTML, CSS, animations, and responsive design skills.</div>
+        </div>
+        <div class="card-arrow">View collection →</div>
+      </a>
+
       <div class="no-results" id="no-results">No projects match this filter.</div>
 
     </div>
   </main>
 
-  <!-- ── Portfolio Showcases ─────────────────────────────── -->
-  <section class="wrapper">
-    <div class="divider" style="margin-top: 4rem; margin-bottom: 2rem;"><span>full portfolio showcases</span></div>
-
-    <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 2rem;">
-      <a class="card" href="./projects/port1/" aria-label="Portfolio 1 - cyberpunk theme">
-        <div>
-          <div class="card-top">
-            <span class="card-icon">🖥️</span>
-            <span class="card-tag" style="color: #00ff88; border-color: rgba(0,255,136,0.35); background: rgba(0,255,136,0.08);">PORTFOLIO</span>
-          </div>
-          <div class="card-title">Portfolio 1</div>
-          <div class="card-desc">Full professional portfolio — cyberpunk-themed with terminal aesthetics and 3D visuals.</div>
-        </div>
-        <div class="card-arrow">View →</div>
-      </a>
-
-      <a class="card" href="./projects/port2/" aria-label="Portfolio 2 - modern cyberpunk">
-        <div>
-          <div class="card-top">
-            <span class="card-icon">🎨</span>
-            <span class="card-tag" style="color: #a855f7; border-color: rgba(168,85,247,0.35); background: rgba(168,85,247,0.08);">PORTFOLIO</span>
-          </div>
-          <div class="card-title">Portfolio 2</div>
-          <div class="card-desc">Complete professional portfolio — modern cyberpunk design with glitch effects and dynamic animations.</div>
-        </div>
-        <div class="card-arrow">View →</div>
-      </a>
-    </div>
-  </section>
   <div class="divider"><span>built with curiosity</span></div>
 
   <footer>
