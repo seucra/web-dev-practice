@@ -50,9 +50,13 @@ jobs:
           cp -r projects/portfolios/port2/dist/* dist/projects/portfolios/port2/ 2>/dev/null || true
           cp -r projects/portfolios/port3/dist/* dist/projects/portfolios/port3/ 2>/dev/null || true
           cp -r projects/portfolios/port1/* dist/projects/portfolios/port1/ 2>/dev/null || true
+          cp -r projects/css-art dist/projects/ 2>/dev/null || true
+          cp -r projects/forms-accessibility dist/projects/ 2>/dev/null || true
+          cp -r projects/html-fundamentals dist/projects/ 2>/dev/null || true
+          cp -r projects/layouts dist/projects/ 2>/dev/null || true
+          cp -r projects/typography dist/projects/ 2>/dev/null || true
           cp index.html dist/
           cp README.md dist/ 2>/dev/null || true
-          cp -r projects/*/[!d]* dist/projects/ 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
