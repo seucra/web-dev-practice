@@ -91,9 +91,9 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center py-20">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center py-20 md:py-32">
         {/* ─── LEFT: Text ─────────────────────────────────────────────────────── */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-7">
           {/* Label */}
           <span
             ref={labelRef}
@@ -106,10 +106,11 @@ export default function Hero() {
           {/* Name */}
           <h1
             ref={nameRef}
-            className="opacity-0 font-display font-bold leading-none"
+            className="opacity-0 font-display font-bold leading-tight"
             style={{
-              fontSize: 'clamp(2.4rem, 5vw, 3.8rem)',
+              fontSize: 'clamp(2.6rem, 5.5vw, 4rem)',
               color: '#e2e8f0',
+              letterSpacing: '-0.02em',
             }}
           >
             Shams{' '}
@@ -123,28 +124,28 @@ export default function Hero() {
           </h1>
 
           {/* Role typewriter */}
-          <div ref={roleRef} className="font-mono text-base opacity-0" style={{ minHeight: 28 }}>
+          <div ref={roleRef} className="font-mono text-base opacity-0 text-[#00cfff]" style={{ minHeight: 32 }}>
             &gt;&nbsp;<TypewriterRole />
           </div>
 
           {/* Tagline */}
           <p
             ref={taglineRef}
-            className="opacity-0 text-[#94a3b8] text-base leading-relaxed max-w-md"
+            className="opacity-0 text-[#94a3b8] text-base leading-relaxed max-w-lg"
           >
             BTech Computer Engineering @ VIT Mumbai · 2nd Year<br />
             Passionate about Open Source, Security, and Building Solutions.
           </p>
 
           {/* CTAs */}
-          <div ref={ctaRef} className="flex flex-wrap gap-4 opacity-0">
+          <div ref={ctaRef} className="flex flex-wrap gap-5 opacity-0 pt-2">
             <a
               href="#projects"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="font-mono text-sm tracking-widest uppercase px-6 py-3 transition-all duration-200 hover:scale-105"
+              className="font-mono text-sm tracking-widest uppercase px-7 py-3 rounded transition-all duration-200 hover:scale-105 inline-block"
               style={{
                 backgroundColor: '#00ff88',
                 color: '#070a0e',
@@ -159,9 +160,9 @@ export default function Hero() {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="font-mono text-sm tracking-widest uppercase px-6 py-3 border transition-all duration-200 hover:bg-[#00cfff] hover:border-[#00cfff] hover:text-[#070a0e]"
+              className="font-mono text-sm tracking-widest uppercase px-7 py-3 rounded border transition-all duration-200 hover:bg-[#00cfff] hover:border-[#00cfff] hover:text-[#070a0e] inline-block"
               style={{
-                borderColor: 'rgba(0,207,255,0.5)',
+                borderColor: 'rgba(0,207,255,0.6)',
                 color: '#00cfff',
               }}
             >
@@ -170,7 +171,7 @@ export default function Hero() {
           </div>
 
           {/* Socials */}
-          <div ref={socialRef} className="flex items-center gap-5 opacity-0">
+          <div ref={socialRef} className="flex items-center gap-6 opacity-0 pt-4">
             <a
               href="https://github.com/seucra"
               target="_blank"
