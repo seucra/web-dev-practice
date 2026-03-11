@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-bg-primary: #070a0e;
+  --color-bg-secondary: #0d1117;
+  --color-bg-card: #0f1720;
+  --color-neon-green: #00ff88;
+  --color-neon-cyan: #00cfff;
+  --color-neon-amber: #fbbf24;
+  --color-neon-purple: #a855f7;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #475569;
+  --color-border: #1e293b;
+
+  /* Fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Orbitron", sans-serif;
+
+  /* Animations */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-14px); }
+  }
+  @keyframes neon-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.7; }
+  }
+  @keyframes scan-line {
+    0%   { top: -10%; }
+    100% { top: 110%; }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes glitch-1 {
+    0%   { clip-path: inset(20% 0 60% 0); transform: translate(-3px); }
+    33%  { clip-path: inset(70% 0 10% 0); transform: translate(3px); }
+    66%  { clip-path: inset(45% 0 35% 0); transform: translate(-3px); }
+    100% { clip-path: inset(20% 0 60% 0); transform: translate(0); }
+  }
+
+  --animate-blink: blink 1s step-end infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-neon-pulse: neon-pulse 2.5s ease-in-out infinite;
+  --animate-scan-line: scan-line 4s linear infinite;
+  --animate-fade-up: fade-up 0.6s ease forwards;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #00ff88; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #00cfff; }
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+a { text-decoration: none; color: inherit; }
+
+::selection {
+  background-color: rgba(0, 255, 136, 0.2);
+  color: #00ff88;
+}
+
+/* ─── Glow Utilities ────────────────────────────────────────────────────────── */
+.glow-green { text-shadow: 0 0 8px #00ff88, 0 0 20px #00ff88; }
+.glow-cyan  { text-shadow: 0 0 8px #00cfff, 0 0 20px #00cfff; }
+
+.box-glow-green { box-shadow: 0 0 12px rgba(0,255,136,0.35), inset 0 0 8px rgba(0,255,136,0.06); }
+.box-glow-cyan  { box-shadow: 0 0 12px rgba(0,207,255,0.35), inset 0 0 8px rgba(0,207,255,0.06); }
+
+/* ─── Grid dot background ───────────────────────────────────────────────────── */
+.bg-dots {
+  background-image: radial-gradient(circle, rgba(0,255,136,0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ─── Terminal window ───────────────────────────────────────────────────────── */
+.terminal-window {
+  background: #0d1117;
+  border: 1px solid rgba(0,255,136,0.18);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.terminal-topbar {
+  background: #161b22;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid rgba(0,255,136,0.1);
+}
+.terminal-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+}
+
+/* ─── Section label ─────────────────────────────────────────────────────────── */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #00ff88;
+}
+
+/* ─── Cursor blink ──────────────────────────────────────────────────────────── */
+.cursor-blink::after {
+  content: '_';
+  animation: var(--animate-blink);
+  color: #00ff88;
+}
+
+/* ─── Scanline overlay ──────────────────────────────────────────────────────── */
+.scanlines {
+  position: relative;
+}
+.scanlines::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.03) 3px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+.scroll-hide::-webkit-scrollbar { display: none; }
+.scroll-hide { -ms-overflow-style: none; scrollbar-width: none; }
